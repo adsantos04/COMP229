@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Midterm Exam Part B</title>
+   <link rel="stylesheet" href="stylesheet.css"/>
+   <script src="midterm.js" defer></script>
+   </head>
+   <div class="outline">
+    <form>
+        <h1>Billing Address</h1>
+        <label for="Fname1"> First Name:</label> <input type ="text" id ="Fname1" name="Fname1" placeholder="Enter First Name"required/> <br><br>
+        <label for="Lname1"> Last Name:</label> <input type ="text" id ="Lname1" name="Lname1"placeholder="Enter Last Name" required/><br><br>
+        <label for="STaddress1"> Street Address:</label><input type ="text" id ="STaddress1" name="STaddress1"placeholder="Street Address" required/><br><br>
+        <label for="city1"> City:</label> <input type ="text" id ="city1" name="city1" placeholder="City Name"required/><br><br>
+        <label for="province1"> Province:</label> 
+        <select name ="text" id="province1"required>
+            <option value="ON">ON</option>
+            <option value="QC">QC</option>
+            <option value="BC">BC</option>
+            <option value="AB">AB</option>
+            <option value="MB">MB</option>
+            <option value="SK">SK</option>
+            <option value="YT">YT</option>
+            <option value="NT">NT</option>
+            <option value="NU">NU</option>
+            <option value="NL">NL</option>
+            <option value="PEI">PEI</option>
+            <option value="NS">NS</option>
+            <option value="NB">NB</option>
+        </select>
+        <br><br>
+        <label for="Pcode1"> Postal Code: </label> <input type ="complex" id ="Pcode1" name="Pcode1" placeholder="1A1 1A1"required/><br><br>
+        <label for="phone1"> Phone: </label> <input type ="text" id ="phone1" name="phone1" placeholder="000-000-0000"/>
+    </form>
+    <hr>
+    <form id="midtermForm">
+        <h1>Delivery Address</h1>
+        <input onchange="handlecheckbox()"type="checkbox" name="sameAsBilling" id ="sameAsBilling"/>
+        <label for="sameAsBilling">Same as Billing Address</label> <br><br>
+        <label for="Fname2"> First Name:</label> <input type ="text" id ="Fname2" name="Fname2" placeholder="Enter First Name"required/> <br><br>
+        <label for="Lname2"> Last Name:</label> <input type ="text" id ="Lname2" name="Lname2"placeholder="Enter Last Name" required/><br><br>
+        <label for="STaddress2"> Street Address:</label><input type ="text" id ="STaddress2" name="STaddress2"placeholder="Street Address" required/><br><br>
+        <label for="city2"> City:</label> <input type ="text" id ="city2" name="city2" placeholder="City Name"required/><br><br>
+        <label for="province2"> Province:</label>
+        <select name ="text" id="province2"required>
+            <option value="ON">ON</option>
+            <option value="QC">QC</option>
+            <option value="BC">BC</option>
+            <option value="AB">AB</option>
+            <option value="MB">MB</option>
+            <option value="SK">SK</option>
+            <option value="YT">YT</option>
+            <option value="NT">NT</option>
+            <option value="NU">NU</option>
+            <option value="NL">NL</option>
+            <option value="PEI">PEI</option>
+            <option value="NS">NS</option>
+            <option value="NB">NB</option>
+        </select>
+        <br><br>
+        <label for="Pcode2"> Postal Code: </label><input type ="complex" id ="Pcode2" name="Pcode2"placeholder="1A1 1A1" required/><br><br>
+        <label for="phone2"> Phone: </label><input type ="text" id ="phone2" name="phone2" placeholder="000-000-0000"/>
+        <br><br>
+        <button type ="submit" onclick="checkvalid()">Submit</button>
+    </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(186, 168, 144);
+}
+h1 {
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+#gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    overflow: hidden;
+
+}
+
+#gallery img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+#controls button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(92, 91, 91);
+    color: #fff;
+    cursor: pointer;
+}
+
+#update {
+    background-color: #4e9c9f;
+}
+
+#update:hover {
+    background-color: #33817a;
+}

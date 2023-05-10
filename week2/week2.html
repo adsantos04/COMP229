@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+  Enter your first name <input type="text" id="fn"><br><br><br>
+  Enter your last name <input type="text" id="ln"><br><br><br>
+  <input type="submit" onclick="ProcessingForm()">
+<script>
+  function ProcessingForm()
+  {
+    let firstname = document.getElementById("fn").value;
+    let lastname = document.getElementById("ln").value;
+    document.write("<h3> Congratulations, your data is stored in our DB <br><br>")
+    document.write("Your first name is " + firstname + "<br><br>");
+    document.write("Your last name is " + lastname);
+  }
+</script>
+</body>
+</html>

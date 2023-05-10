@@ -1,0 +1,55 @@
+body {
+    background-color:rgb(217, 217, 208);
+  }
+  
+  #all-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #scoreButton,
+  #speedButton {
+    background-color: #059066;
+    color: #0c271f;
+    border: 2px solid #023224;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    
+  }
+  #scoreButton:active,
+  #scoreButton:focus,
+  #scoreButton:hover,
+  #speedButton:active,
+  #speedButton:focus,
+  #speedButton:hover {
+    transform: scale(1.1);
+  }
+  
+  #title {
+    font-size: 35px;
+    text-transform: capitalize;
+    color: #104325;
+  }
+  #score {
+    font-size: 20px;
+    color: #07090c;
+  }
+  
+  #gameCanvas {
+    margin-top: 50px;
+    background-image: url(./leaf.jpeg);
+    background-size: cover;
+    border: 5px solid rgb(6, 75, 26);
+  }
+  #gameCanvas:hover,
+  #gameCanvas:focus,
+  #gameCanvas:active {
+    cursor: pointer;
+    transform: scale(1.02);
+  }
+  footer{
+    text-align: center;
+  }
